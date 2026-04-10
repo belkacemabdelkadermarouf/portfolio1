@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="events-body">
+
+<header class="hidden">
+<nav class="navbar">
+  <h2 class="logo">Belkacem</h2>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="recognition.html">recognition</a></li>
+    <li><a href="competetions.html">competetions</a></li>
+    <li><a href="volunteering.html">volunteers</a></li>
+    <li><a href="internship.html">internship</a></li>
+
+
+
+
+  </ul>
+</nav>
+
+</header>
+
+
+<main class="events-page">
+    <section id="Internship-section">
+        <h1 class="section-title"><span>Internship</span></h1>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterEvents('all', this)">All</button>
+            <button class="filter-btn" onclick="filterEvents('Discovery & Observation', this)">Discovery & Observation</button>
+            <button class="filter-btn" onclick="filterEvents('Practical Training', this)">Practical Training</button>
+            <button class="filter-btn" onclick="filterEvents('End-of-Study (PFE)', this)">End-of-Study (PFE)</button>
+        </div>
+
+        <div class="events-grid">
+                
+            <div class="event-card" data-category="Discovery & Observation" onclick="openModal('comp1')">
+                    <div class="event-banner">
+                        <img src="assets/sonatrach1.jpg" alt="Comp 1">
+                        <span class="badge winner">Intern</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Sonatrach</h3>
+                        <p class="event-meta">2024 • Oran</p>
+                        <div class="impact-evidence">
+
+                            <div class="evidence-box" onclick="event.stopPropagation(); showImage('assets/proj1.jpg')">
+                             <button class="details-btn"
+                              onclick="window.location.href='sonatrach.html'">
+                               View Details <i class="fa-solid fa-circle-info"></i>
+                             </button>
+   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <div class="event-card" data-category="Discovery & Observation" onclick="openModal('comp1')">
+                <div class="event-banner">
+                    <img src="assets/sonelgaz1.jpg" alt="Comp 1">
+                    <span class="badge winner">Intern</span>
+                </div>
+
+                <div class="event-info">
+                    <h3>Sonelgaz</h3>
+                    <p class="event-meta">2026 • Mascara</p>
+                    <div class="impact-evidence">
+                        <div class="evidence-box" onclick="event.stopPropagation(); showImage('assets/proj1.jpg')">
+                            <button class="details-btn" onclick="window.location.href='sonelgaz.html'">
+                                View Details <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+ 
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+    
+    </main>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <div id="imageLightbox" class="lightbox" onclick="this.style.display='none'">
+        <img id="lightboxImg" src="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

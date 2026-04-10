@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wi-Fi Heatmap AI | Belkacem</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --primary-color: #00d2ff; 
+      --secondary-color: #3a7bd5;
+      --bg-dark: #0b111e;
+      --card-bg: #111827;
+      --text-light: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-blue: #1d4ed8;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .project-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    /* VISUALS */
+    .project-visuals {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .main-image img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .thumb-grid {
+      display: flex;
+      gap: 10px;
+    }
+
+    .thumb-grid img {
+      width: 100px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.1);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .thumb-grid img:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.2);
+    }
+
+    /* TEXT CONTENT */
+    .project-info h1 {
+      font-size: 2.2rem;
+      margin: 10px 0;
+      line-height: 1.2;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 15px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      align-items: center;
+    }
+
+    .overview-box {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent-blue);
+      margin: 20px 0;
+    }
+
+    .overview-box h3 {
+      font-size: 0.95rem;
+      color: var(--primary-color);
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .feature-item {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 8px;
+    }
+
+    .feature-item i { color: var(--primary-color); }
+
+    /* BUTTONS */
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .btn-demo, .btn-github {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    .btn-demo { background-color: #0070f3; color: white; }
+    .btn-demo:hover { background-color: #0051ad; transform: translateY(-2px); }
+
+    .btn-github { background-color: #24292e; color: white; }
+    .btn-github:hover { background-color: #444d56; transform: translateY(-2px); }
+
+    @media (max-width: 900px) {
+      .project-container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <h2 class="logo">Belkacem</h2>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="recognition.html">recognition</a></li>
+    <li><a href="competetions.html">competetions</a></li>
+    <li><a href="volunteering.html">volunteers</a></li>
+    <li><a href="internship.html">internship</a></li>
+  </ul>
+</nav>
+
+<section class="project-container">
+  
+  <div class="project-visuals">
+    <div class="main-image">
+      <img src="assets/project2.jpg" id="featured-image" alt="Wi-Fi Heatmap Visualization">
+    </div>
+    
+    <div class="thumb-grid">
+      <img src="assets/ncasee.jpg" alt="Heatmap Result">
+
+    </div>
+
+    <div class="btn-group">
+      <a href="#" class="btn-demo" target="_blank">
+        <i class="fas fa-external-link-alt"></i> View Live Demo
+      </a>
+      <a href="#" class="btn-github" target="_blank">
+        <i class="fab fa-github"></i> Repository
+      </a>
+    </div>
+  </div>
+
+  <div class="project-info">
+    <div class="meta-row">
+      <span><i class="far fa-calendar"></i> Nov 2025</span>
+      <span><i class="fas fa-map-marker-alt"></i> Boumerdes - NCASEE’25</span>
+    </div>
+
+    <h1>Wi-Fi Heatmap AI Project <br> Smart Indoor Signal Mapping</h1>
+
+    <div class="overview-box">
+      <h3><i class="fas fa-info-circle"></i> Project Concept</h3>
+      <p style="font-size: 0.9rem; margin: 0;">
+        Presented at the National Conference of Advanced Systems in Electrical Engineering (NCASEE’25). This project uses 
+        unsupervised intelligence to visualize signal strength inside rooms, identifying dead zones without the need for GSM modules.
+      </p>
+    </div>
+
+    <div class="overview-box">
+      <h3><i class="fas fa-bullseye"></i> The Challenge</h3>
+      <p style="font-size: 0.9rem; margin: 0;">
+        Wireless signals are often obstructed by walls and furniture. Traditional mapping requires expensive hardware. 
+        I needed a way to collect and interpolate spatial data using only an ESP32 and Python.
+      </p>
+    </div>
+
+    <div class="overview-box">
+      <h3><i class="fas fa-lightbulb"></i> The AI Solution</h3>
+      <p style="font-size: 0.9rem; margin: 0;">
+        I implemented **Inverse Distance Weighting (IDW)** to estimate signal strength in unmeasured areas. 
+        The system normalizes RSSI values (0 to 1) and generates a high-resolution grid map for intuitive dead-zone detection.
+      </p>
+    </div>
+
+    <h3 style="font-size: 1.1rem; margin-top: 25px;">Key Technical Features</h3>
+    <div class="feature-list">
+      <div class="feature-item">
+        <i class="fas fa-check-circle"></i>
+        <span>ESP32 WiFi.scanNetworks()</span>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-check-circle"></i>
+        <span>Spatial Interpolation (IDW)</span>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-check-circle"></i>
+        <span>RSSI Data Normalization</span>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-check-circle"></i>
+        <span>Dynamic Heatmap Visualization</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="footer-bottom" style="text-align: center; padding: 40px 0;">
+    <p>© 2026 Belkacem Abdelkader Marouf. All Rights Reserved.</p>
+    <button id="backToTop" style="background: var(--primary-color); border: none; padding: 10px; border-radius: 5px; cursor: pointer;"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const thumbnails = document.querySelectorAll('.thumb-grid img');
+    const mainImg = document.getElementById('featured-image');
+
+    thumbnails.forEach(thumb => {
+        thumb.addEventListener('click', function() {
+            mainImg.style.opacity = '0';
+            setTimeout(() => {
+                mainImg.src = this.src;
+                mainImg.alt = this.alt;
+                mainImg.style.opacity = '1';
+            }, 200);
+            thumbnails.forEach(t => t.style.border = '1px solid rgba(255,255,255,0.1)');
+            this.style.border = '2px solid var(--primary-color)';
+        });
+    });
+
+    const backToTopBtn = document.getElementById('backToTop');
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // Scroll Reveal Logic
+    const revealElements = document.querySelectorAll('.overview-box, .feature-item, .main-image');
+    const revealOnScroll = () => {
+        revealElements.forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+                el.style.opacity = "1";
+                el.style.transform = "translateY(0)";
+            }
+        });
+    };
+
+    revealElements.forEach(el => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(20px)";
+        el.style.transition = "all 0.6s ease-out";
+    });
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); 
+});
+</script>
+</body>
+</html>

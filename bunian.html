@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belkacem | Bunian Volunteering</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --primary-color: #00d2ff; 
+      --secondary-color: #3a7bd5;
+      --bg-dark: #0b111e;
+      --card-bg: #111827;
+      --text-light: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-blue: #1d4ed8;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .project-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    /* VISUALS */
+    .project-visuals {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .main-image img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .thumb-grid {
+      display: flex;
+      gap: 10px;
+    }
+
+    .thumb-grid img {
+      width: 100px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.1);
+      cursor: pointer;
+    }
+
+    /* TEXT CONTENT */
+    .project-info h1 {
+      font-size: 2.2rem;
+      margin: 10px 0;
+      line-height: 1.2;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 15px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      align-items: center;
+    }
+
+    .overview-box {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent-blue);
+      margin: 20px 0;
+    }
+
+    .overview-box h3 {
+      font-size: 0.95rem;
+      color: var(--primary-color);
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .feature-item {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 8px;
+    }
+
+    .feature-item i { color: var(--primary-color); margin-top: 3px; }
+
+    .btn-cert {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: transparent;
+      border: 2px solid var(--accent-blue);
+      color: var(--text-light);
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-cert:hover {
+      background: var(--accent-blue);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 900px) {
+      .project-container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <h2 class="logo">Belkacem</h2>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="recognition.html">recognition</a></li>
+    <li><a href="competetions.html">competetions</a></li>
+    <li><a href="volunteering.html">volunteers</a></li>
+    <li><a href="internship.html">internship</a></li>
+  </ul>
+</nav>
+
+<section class="project-container">
+  
+  <div class="project-visuals">
+    <div class="main-image">
+      <img src="assets/bunian1.jpg" id="featured-image" alt="Bunian Volunteering Activity">
+    </div>
+    
+
+
+    <a href="https://www.facebook.com/bunian.algeria" class="btn-cert" target="_blank">
+      <i class="fab fa-facebook"></i> Visit Bunian Algeria
+    </a>
+  </div>
+
+  <div class="project-info">
+    <div class="meta-row">
+      <span><i class="far fa-calendar"></i> Mar 2025 - Jun 2025</span>
+      <span><i class="fas fa-users"></i> Youth Development</span>
+    </div>
+
+    <h1>Volunteer Member <br> Bunian - Algeria</h1>
+
+    <div class="overview-box">
+      <h3><i class="fas fa-bullseye"></i> Mission & Purpose</h3>
+      <p style="font-size: 0.9rem; margin: 0;">
+        Bunian is a volunteer-led initiative dedicated to empowering Algerian youth. Our mission is to replace "trivial content" with high-value educational material, fostering awareness and personal growth based on solid ethical principles.
+      </p>
+    </div>
+
+    <div class="overview-box">
+      <h3><i class="fas fa-bullhorn"></i> Awareness & Education</h3>
+      <p style="font-size: 0.9rem; margin: 0;">
+        I contribute to digital campaigns addressing critical social issues such as digital addiction and family dynamics. We organize webinars and live sessions featuring experts to provide young people with actionable knowledge.
+      </p>
+    </div>
+
+    <div class="overview-box">
+      <h3><i class="fas fa-heartbeat"></i> Field Work & Community</h3>
+      <p style="font-size: 0.9rem; margin: 0;">
+        Beyond digital content, I participate in field activities including hospital visits for children and supporting local community initiatives across various states in Algeria to create a tangible positive impact.
+      </p>
+    </div>
+
+    <h3 style="font-size: 1.1rem; margin-top: 25px;">Volunteer Contributions</h3>
+    <div class="feature-list">
+      <div class="feature-item">
+        <i class="fas fa-check-circle"></i>
+        <span>Digital Content Strategy</span>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-check-circle"></i>
+        <span>Event Logistics & Planning</span>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-check-circle"></i>
+        <span>Community Outreach</span>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-check-circle"></i>
+        <span>Youth Mentorship Support</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="footer-bottom" style="text-align: center; padding: 40px 0;">
+    <p>© 2026 Belkacem Abdelkader Marouf. All Rights Reserved.</p>
+    <button id="backToTop" style="background: var(--primary-color); border: none; padding: 10px; border-radius: 5px; cursor: pointer;"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const thumbnails = document.querySelectorAll('.thumb-grid img');
+    const mainImg = document.getElementById('featured-image');
+
+    thumbnails.forEach(thumb => {
+        thumb.addEventListener('click', function() {
+            mainImg.style.opacity = '0';
+            setTimeout(() => {
+                mainImg.src = this.src;
+                mainImg.style.opacity = '1';
+            }, 200);
+        });
+    });
+
+    const backToTopBtn = document.getElementById('backToTop');
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+});
+</script>
+</body>
+</html>
